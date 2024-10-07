@@ -1,0 +1,1 @@
+To-Do list are bunch of tasks that will be done. Finished task can be deleted. It's displayed on a console.

@@ -1,0 +1,1 @@
+This is a clone of a Spotify "https://open.spotify.com/" website. It's a basic site. Not added a javaScript.
