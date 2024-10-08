@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Application Form</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="title">
+		<h1>Application Form</h1><hr />
+	</div>
+	<div class="main">
+		<div class="pInfo">
+			<form action="/action_page.php" method="post" autocomplete="off">
+				<fieldset>
+					<legend>Personal Info:</legend>
+					<div class="personal">
+						<label for="fName">First Name:</label>
+						<input type="text" id="fName" name="fName" />
+					</div>
+					<div class="personal">
+						<label for="lName">Last Name:</label>
+						<input type="text" id="lName" name="lName" />
+					</div>
+					<div class="personal">
+						<label for="birthday">Birth Date:</label>
+						<input type="date" id="birthday" name="birthday" />
+					</div>
+					<div class="personal">
+						<label for="phone">Enter your Phone number:</label>
+						<input type="tel" id="phone" name="phone" placeholder="12345-67890" pattern="[0-9]{5}-[0-9]{5}" required />
+					</div>
+					<div class="personal">
+						<label for="email">Enter your E-mail:</label>
+						<input type="email" id="email" name="email" />
+					</div>
+					<div class="personal">
+						<label for="myFile">Upload your Photo:</label>
+						<input type="file" id="myFile" name="myFile" />
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+		<p>Choose your favourite web language:</p>
+		<div class="radio">
+			<form action="/action_page.php" method="post" autocomplete="off">
+				<input type="radio" id="html" name="fav_lang" value="HTML" />
+				<label for="html">HTML</label>
+				<input type="radio" id="css" name="fav_lang" value="CSS" />
+				<label for="css">CSS</label>
+				<input type="radio" id="javaScript" name="fav_lang" value="JavaScript" />
+				<label for="javaScript">Java Script</label>
+			</form>
+		</div>
+
+		<p>Choose a browser:</p>
+		<div class="list">
+			<form action="/action_page.php" method="post" autocomplete="off">
+				<input list="browser" name="browser" />
+				<datalist id="browser">
+					<option value="Edge"></option>
+					<option value="Chrome"></option>
+					<option value="Firefox"></option>
+					<option value="Safari"></option>
+					<option value="Opera"></option>
+				</datalist>
+			</form>
+		</div>
+
+		<p>Do you have a Vahicle?</p>
+		<div class="checkbox">
+			<form action="/action_page.php" method="post" autocomplete="off">
+				<input type="checkbox" id="vehi1" name="vehi1" value="bike">
+				<label for="vehi1">I have a bike.</label>
+				<input type="checkbox" id="vehi2" name="vehi2" value="car">
+				<label for="vehi2">I have a car.</label>
+				<input type="checkbox" id="vehi3" name="vehi3" value="truck">
+				<label for="vehi3">I have a truck.</label>	
+			</form>
+		</div>
+
+		<p>Which companies' car do you have</p>
+		<div class="select">
+			<form action="/action_page.php." method="post" autocomplete="off">
+				<label for="cars">Choose a Car:</label>
+				<select id="cars" name="cars">
+					<option value="volvo">Volvo</option>
+					<option value="fiat">Fiat</option>
+					<option value="bmw">BMW</option>
+					<option value="audi">Audi</option>
+				</select>
+			</form>
+		</div>
+
+		<p>Comments:</p>
+		<div class="comment">
+			<form action="/action_page.php." method="post" autocomplete="off">
+				<textarea name="comment" id="comment" rows="5" cols="50" placeholder="Write your comment here!"></textarea>
+			</form>
+		</div>
+		
+		<form action="/action_page.php." method="post" autocomplete="off">
+			<button>Submit</button>
+		</form>
+	</div>
+</body>
+</html>
